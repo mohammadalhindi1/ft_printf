@@ -1,11 +1,14 @@
 NAME    = libftprintf.a
+
 CC      = cc
 CFLAGS  = -Wall -Wextra -Werror
 AR      = ar
 ARFLAGS = rcs
 RM      = rm -f
 
-SRCS    = ft_printf.c
+SRCS    = ft_printf.c \
+          ft_conv_char_str.c \
+          ft_conv_numbers.c
 
 OBJS    = $(SRCS:.c=.o)
 
