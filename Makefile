@@ -2,9 +2,6 @@ NAME    = libftprintf.a
 
 CC      = cc
 CFLAGS  = -Wall -Wextra -Werror
-AR      = ar
-ARFLAGS = rcs
-RM      = rm -f
 
 SRCS    = ft_printf.c \
           ft_conv_char_str.c \
@@ -15,16 +12,13 @@ OBJS    = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
-
-%.o: %.c ft_printf.h
-	$(CC) $(CFLAGS) -c $< -o $@
+	ar rcs $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS)
+	rm $(OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	rm $(NAME)
 
 re: fclean all
 
