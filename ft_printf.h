@@ -6,16 +6,15 @@
 /*   By: malhendi <malhendi@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 18:22:45 by malhendi          #+#    #+#             */
-/*   Updated: 2025/08/28 18:22:49 by malhendi         ###   ########.fr       */
+/*   Updated: 2025/08/30 19:45:56 by malhendi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
+#ifndef FT_PRINTF_H 
 # define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdint.h>
 # include <stddef.h>
 
 # define HEX_LOWER "0123456789abcdef"

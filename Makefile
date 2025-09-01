@@ -24,7 +24,3 @@ re: fclean all
 
 .PHONY: all clean fclean re
 
-# ar rcs: Command to create a static library
-# r: Insert files into the archive.
-# c: Create the archive if it doesn't exist
-# s: Write an index (for faster linking)

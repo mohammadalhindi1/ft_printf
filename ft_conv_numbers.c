@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_conv_numbers.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malhendi <malhendi@student.42amman.com>    +#+  +:+       +#+        */
+/*   By: malhendi <malhendi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 17:36:41 by malhendi          #+#    #+#             */
-/*   Updated: 2025/08/28 17:36:42 by malhendi         ###   ########.fr       */
+/*   Updated: 2025/08/30 17:19:25 by malhendi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	ft_putptr_pf(const void *p)
 	if (!p)
 		return ((int)write(1, "(nil)", 5));
 	count = (int)write(1, "0x", 2);
-	addr = (unsigned long long)(uintptr_t)p;
+	addr = (unsigned long long)p;
 	count += ft_putnbase_pf(addr, HEX_LOWER);
 	return (count);
 }

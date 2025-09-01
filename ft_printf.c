@@ -6,7 +6,7 @@
 /*   By: malhendi <malhendi@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 17:36:35 by malhendi          #+#    #+#             */
-/*   Updated: 2025/08/28 17:36:36 by malhendi         ###   ########.fr       */
+/*   Updated: 2025/09/01 22:42:29 by malhendi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	ft_printf(const char *fmt, ...)
 	va_list	ap;
 	int		total;
 
-	if (!fmt)
+	if (fmt == NULL)
 		return (-1);
 	va_start(ap, fmt);
 	total = 0;
