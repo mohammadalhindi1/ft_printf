@@ -15,7 +15,7 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm $(OBJS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
@@ -23,4 +23,5 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
 
